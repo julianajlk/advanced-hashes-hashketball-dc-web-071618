@@ -149,7 +149,6 @@ end
 
 def team_names
   game_hash.values
-  end
 end
 
 def player_numbers
