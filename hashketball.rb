@@ -151,7 +151,6 @@ def team_names
   game_hash.collect do |team, team_data|
     team_data[:name]
   end
-  team_names
 end
 
 def player_numbers
