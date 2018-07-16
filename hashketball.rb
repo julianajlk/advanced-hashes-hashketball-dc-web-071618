@@ -1,6 +1,7 @@
 # Write your code here
 
 require 'pry'
+
 def game_hash
   {
       home: {
@@ -186,5 +187,12 @@ def big_shoe_rebounds
   big_shoes_player = 0
   rebounds = 0
     game_hash.each do |team, team_data|
-
+      team_data[:players].each do |stats|
+        if stats[:shoe] > big_shoes_player
+          big_shoes_player = stats[:shoe]
+          rebounds = stats[:rebounds]
+        end
+      end
+    end
+  rebounds
 end
