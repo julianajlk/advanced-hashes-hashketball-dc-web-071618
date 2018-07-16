@@ -1,4 +1,5 @@
 # Write your code here!
+require "pry"
 def game_hash
   {
       home: {
@@ -181,5 +182,8 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
+  big_shoes_player = 0
+  rebounds = 0
+    game_hash.each do |team, team_data|
 
 end
